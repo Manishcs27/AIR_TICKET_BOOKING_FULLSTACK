@@ -1,0 +1,12 @@
+[submodule "backend/AuthService"]
+	path = backend/AuthService
+	url = https://github.com/Manishcs27/Auth_Services.git
+[submodule "backend/BookingService"]
+	path = backend/BookingService
+	url = https://github.com/Manishcs27/AirTicketBookingService.git
+[submodule "backend/FlightAndSearch"]
+	path = backend/FlightAndSearch
+	url = https://github.com/Manishcs27/FlightAndsearchService.git
+[submodule "backend/RemainderService"]
+	path = backend/RemainderService
+	url = https://github.com/Manishcs27/RemainderService.git
