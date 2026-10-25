@@ -167,7 +167,7 @@ function App() {
           <label>FROM <input placeholder="City or airport" value={departure} onChange={(event) => setDeparture(event.target.value)} /></label>
           <span className="route-arrow" aria-hidden="true">→</span>
           <label>TO <input placeholder="City or airport" value={arrival} onChange={(event) => setArrival(event.target.value)} /></label>
-          <label className="date-field">DATE <input type="date" value={travelDate} onChange={(event) => setTravelDate(event.target.value)} /></label>
+          <label className="date-field">DATE <input type="date" value={travelDate} onChange={(event) => { setTravelDate(event.target.value); loadFlights(); }} /></label>
         </div>
         <div className="results-heading">
           <h3>Available flights <span>{visibleFlights.length.toString().padStart(2, '0')}</span></h3>

@@ -43,11 +43,13 @@ Override gateway targets with `AUTH_SERVICE_URL`, `FLIGHT_SERVICE_URL`, `BOOKING
 
 The React development server can still be run separately with `npm run dev --workspace=air-ticket-frontend` when hot reload is needed; that optional mode uses port 5173.
 
-To add the sample future flights after airport and airplane data has been seeded, run this from the project root:
+To add sample flights for every date from October 25 through November 5, 2026, first seed the airports and airplanes, then run this from the project root:
 
 ```powershell
 Push-Location backend/FlightAndSearch; npm run seed:sample-flights; Pop-Location
 ```
+
+This seeder can be run again safely; it adds any missing flights without duplicating existing sample flights. The frontend date search filters by the selected departure date.
 
 ## Gateway routes
 
