@@ -1,6 +1,6 @@
 # Air Ticket
 
-All backend code lives in `backend/`: four services and the API gateway. The React/Vite client stays at the project root. The gateway serves the built client and proxies API requests, so the only browser address is `http://localhost:4000`. Backend services bind to loopback and are reached internally by the gateway or BookingService.
+All backend code lives in `backend/`: four services and the API gateway. The microservice source files are included directly in this repository, so they are visible when browsing it on GitHub. The React/Vite client stays at the project root. The gateway serves the built client and proxies API requests, so the only browser address is `http://localhost:4000`. Backend services bind to loopback and are reached internally by the gateway or BookingService.
 
 ## Start locally
 
